@@ -5,9 +5,9 @@ airlines =
 
 function newAircraft()
 {
-    var anum = Math.floor(Math.random() * airports.length);
+    var anum = Math.floor(Math.random() * (airlines.length - 1));
     while (isNaN(anum)) {
-        anum = Math.floor(Math.random() * airports.length);
+        anum = Math.floor(Math.random() * (airlines.length - 1));
     }
     console.log("anum: " + anum);
     

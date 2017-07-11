@@ -13,9 +13,9 @@ icao = [
 ]
 
 function genICAO() {
-    var num = Math.floor(Math.random() * icao.length);
+    var num = Math.floor(Math.random() * (icao.length - 1));
     while (isNaN(num)) {
-        num = Math.floor(Math.random() * icao.length);
+        num = Math.floor(Math.random() * (icao.length - 1));
     }
     return icao[num];
 }
