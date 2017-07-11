@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+    <div id="map" style="width: 1000px; height: 400px;">
+    </div>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(40.640, -73.773),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+            map.addListener('click', function(event) {
+                console.log("Write");
+                displayCoordinates(event.latLng);
+            });
+        }
+
+        function displayCoordinates(pnt) {
+            var coordsLabel = document.getElementById("tdCursor");
+            var lat = pnt.lat();
+            lat = lat.toFixed(10);
+            var lng = pnt.lng();
+            lng = lng.toFixed(10);
+            coordsLabel.innerHTML += lat + "," + lng + "<br>";
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <div id="tdCursor"></div>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
