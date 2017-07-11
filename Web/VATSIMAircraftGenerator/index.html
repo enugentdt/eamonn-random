@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body style="margin: 0;">
+    <div id="map" style="width: 100px; height: 100px; display: inline-block; float: right;">
+    </div>
+    <script src="generatecallsign.js"></script>
+    <script src="genicao.js"></script>
+    <script src="genarpt.js"></script>
+    <script src="genflight.js"></script>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(40.640, -73.773),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+            map.addListener('click', function(event) {
+                console.log("Write");
+                displayCoordinates(event.latLng);
+            });
+        }
+
+        function displayCoordinates(pnt) {
+            var coordsLabel = document.getElementById("textLoc");
+            var lat = pnt.lat();
+            lat = lat.toFixed(10);
+            var lng = pnt.lng();
+            lng = lng.toFixed(10);
+            coordsLabel.innerHTML += genFlight(lat, lng) + "\n";
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <div id="tdCursor" style="padding-right: 10px; padding-top: 10px; display: inline-block; float: left;">
+        <textarea style="resize: none;" onclick="this.focus();this.select()" readonly="readonly" id="textLoc"></textarea>
+    </div>
+    <script>
+        console.log(screen.width);
+        var wid = window.innerWidth;
+        var hei = window.innerHeight;
+        document.getElementById("map").style.width = wid / 3 * 2 + "px";
+        document.getElementById("map").style.height = hei + "px";
+        document.getElementById("textLoc").style.width = wid / 3 - 20 + "px";
+        document.getElementById("textLoc").style.height = hei - 30 + "px";
+    </script>
+</body>
+</html>
