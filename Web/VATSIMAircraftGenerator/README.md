@@ -1,7 +1,6 @@
 # VATSIMAircraftGenerator
 
-Written by Eamonn Nugent and Brin Brody
-Under the "Beer-ware" license.
+Written by Eamonn Nugent and Brin Brody under the "Beer-ware" license.
 
 ## Usage
 To use, simply visit [this link](https://demilletech.github.io/eamonn-random/Web/VATSIMAircraftGenerator/index.html).
