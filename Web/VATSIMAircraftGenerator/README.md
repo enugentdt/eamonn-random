@@ -5,7 +5,7 @@ Written by Eamonn Nugent and Brin Brody under the "Beer-ware" license.
 ## Usage
 To use, simply visit [this link](https://demilletech.github.io/eamonn-random/Web/VATSIMAircraftGenerator/index.html).
 At the moment, the code is written for flights from JFK. To make it work with your own airport, edit `genflight.js`
-to have your airport in the `dep_arpt` var.
+to have your airport in the `depaprt` var.
 
 ### Creating a flight
 Zoom into the airport of your choice, and click anywhere on the map. On the left-hand side, a flightplan should show
@@ -18,7 +18,7 @@ to see how to obtain one. It needs to be inserted into `index.html`, on the line
 GET variable.
 
 ## Add My Airport
-In `genflight.js`, you should see a line that says `var deparpt = "KJFK";`. Edit this line to say `var deparpt = "YOUR_AIRPORT";`
+In `genflight.js`, you should see a line that says `var depaprt = "KJFK";`. Edit this line to say `var depaprt = "YOUR_AIRPORT";`
 
 ## Routing
 Currently, all aircraft are written to proceed DIRECT. In a future revision, FAA PRD routing will be followed.
