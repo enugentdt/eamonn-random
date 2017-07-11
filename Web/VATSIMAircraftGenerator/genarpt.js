@@ -5,7 +5,7 @@ airports = [
 function genAirport()
 {
     var num = Math.ceil(Math.random() * airports.length);
-    while (num == NaN) {
+    while (isNaN(num)) {
         num = Math.ceil(Math.random() * airports.length);
     }
     return airports[num];

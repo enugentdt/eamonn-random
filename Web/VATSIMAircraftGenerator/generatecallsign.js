@@ -6,15 +6,17 @@ airlines =
 function newAircraft()
 {
     var anum = Math.floor(Math.random() * airports.length);
-    while (anum == NaN) {
+    while (isNaN(anum)) {
         anum = Math.floor(Math.random() * airports.length);
     }
+    console.log("anum: " + anum);
     
     var airline = airlines[anum];
-    var nnum = Math.ceil(Math.random() * 9999);
-    while (nnum == NaN) {
-        nnum = Math.ceil(Math.random() * 9999);
+    var nnum = Math.floor(Math.random() * 10000);
+    while (isNaN(nnum)) {
+        nnum = Math.floor(Math.random() * 10000);
     }
+    console.log("nnum: " + nnum)
     
     return airline + nnum;
 }
