@@ -21,10 +21,12 @@ function genFlight(lat,lng)
     // Newline
     var route = "DIRECT";
     var voicetype = "/v/";
-
-    var out = callsign + "," + squawk + "," + lat + "," + lng + "," + heading + "," + alt + "," + 
-        gs + "," + cdr + "\n" + type + "," + actype + "," + cruisespeed + "," + depaprt + 
-        "," + deptime + "," + deptime + "," + cruisealt + "," + arraprt + "," + enroutehrs + "," + 
-        enroutemins + "\n" + route + "\n" + voicetype + "\n";
+    
+    // AAL123:B190/A:T:V:KBTV:KMHT:15500:BTV MPV LEB MHT:/V/VFR/CHARTS:1200:S:44.46370:-73.15221:335:0:360
+    // Callsign:Type:Engine:Rules:Dep Field:Arr Field:Crz Alt:Route:Remarks:Sqk Code:Sqk Mode:Lat:Lon:Alt:Speed:Heading
+    
+    var out = callsign + ":" + actype + "/L:J:" + type + ":" + depaprt + ":" + arraprt + ":" + 
+        cruisealt + ":" + route + ":" + voicetype + ":" + squawk + ":S:" + lat + ":" + lng + ":" +
+        alt + ":" + gs + ":" + heading;
     return out;
 }
