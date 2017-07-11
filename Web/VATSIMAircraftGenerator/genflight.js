@@ -19,7 +19,18 @@ function genFlight(lat,lng)
     var enroutehrs = 4;
     var enroutemins = 50;
     // Newline
+    var routeData = getRoute(depaprt, arraprt);
     var route = "DIRECT";
+    
+    if (routeData != null)
+    {
+        route = routeData[1];
+        if (routeData[3] != "")
+        {
+            cruisealt = routeData[3];
+        }
+    }
+    
     var voicetype = "/v/";
     
     // AAL123:B190/A:T:V:KBTV:KMHT:15500:BTV MPV LEB MHT:/V/VFR/CHARTS:1200:S:44.46370:-73.15221:335:0:360
