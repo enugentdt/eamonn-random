@@ -1,4 +1,4 @@
-function genFlight(lat, lng)
+function genFlight(lat,lng)
 {
     var callsign = newAircraft();
     var squawk = 3001;
@@ -22,9 +22,9 @@ function genFlight(lat, lng)
     var route = "DIRECT";
     var voicetype = "/v/";
 
-    var out = callsign + ", " + squawk + ", " + lat + ", " + lng + ", " + heading + ", " + alt + ", " + 
-        gs + ", " + cdr + "\n" + type + "," + actype + ", " + cruisespeed + ", " + depaprt + 
-        ", " + deptime + ", " + deptime + ", " + cruisealt + ", " + arraprt + ", " + enroutehrs + ", " + 
+    var out = callsign + "," + squawk + "," + lat + "," + lng + "," + heading + "," + alt + "," + 
+        gs + "," + cdr + "\n" + type + "," + actype + "," + cruisespeed + "," + depaprt + 
+        "," + deptime + "," + deptime + "," + cruisealt + "," + arraprt + "," + enroutehrs + "," + 
         enroutemins + "\n" + route + "\n" + voicetype + "\n";
     return out;
 }
