@@ -5,7 +5,16 @@ airlines =
 
 function newAircraft()
 {
-    var airline = airlines[Math.ceil(Math.random() * airlines.length)];
-    var num = Math.ceil(Math.random() * 9999);
-    return airline + num;
+    var anum = Math.ceil(Math.random() * airports.length);
+    while (anum == NaN) {
+        anum = Math.ceil(Math.random() * airports.length);
+    }
+    
+    var airline = airlines[anum];
+    var nnum = Math.ceil(Math.random() * 9999);
+    while (nnum == NaN) {
+        nnum = Math.ceil(Math.random() * 9999);
+    }
+    
+    return airline + nnum;
 }
