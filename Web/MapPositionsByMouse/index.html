@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-
-
-</head>
-
-<body>
-    <div id="map" style="width: 1000px; height: 400px;">
+<body style="margin: 0;">
+    <div id="map" style="width: 100px; height: 100px; display: inline-block; float: left;">
     </div>
     <script>
         function myMap() {
@@ -36,11 +29,11 @@
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <div id="tdCursor"></div>
+    <div id="tdCursor" style="padding-right: 10px; padding-top: 10px; display: inline-block; float: right;"></div>
     <script>
-
-
+        console.log(screen.width);
+        document.getElementById("map").style.width = screen.width / 3 * 2 + "px";
+        document.getElementById("map").style.height = screen.height + "px";
     </script>
 </body>
-
 </html>
