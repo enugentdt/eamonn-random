@@ -16,5 +16,5 @@ function newAircraft()
         nnum = Math.ceil(Math.random() * 9999);
     }
     
-    return anum + nnum;
+    return airline + nnum;
 }
