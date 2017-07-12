@@ -1,10 +1,15 @@
 function genFlight(lat,lng)
 {
+    var mode = "gnd"; //gnd or air
     var callsign = newAircraft();
     var squawk = 3001;
     // Spacer
     var heading = 010;
-    var alt = 27;
+    if(mode=="air"){
+        var alt = Document.getElementById('alt').innerHTML;
+    }else{
+        var alt = 27; //Field Elevation
+    }
     var gs = 1;
     var cdr = 1800;
     var type = "I"; // IFR (I) or VFR (V)
