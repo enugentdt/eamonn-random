@@ -23,6 +23,10 @@
 					center: new google.maps.LatLng(40.6440611,-73.7883084),
 					zoom: 15.5,
 					mapTypeId: google.maps.MapTypeId.HYBRID
+					featureType: "poi",
+					stylers: [
+					  { visibility: "off" }
+					]
 				}
 
 				var map = new google.maps.Map(document.getElementById("map"), mapOptions)
@@ -45,7 +49,8 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_8PQoMzOB3T9F-s1oRS6UJjZ7wvpuQc&callback=myMap"></script>
 		<div id="tdCursor" style="padding-right: 10px; display: inline-block; float: left; width:30%; margin:0; height:100%;">
 			<textarea style="resize: none; height:100%;" onclick="this.focus();this.select()" readonly="readonly" id="textLoc"></textarea>
-			<p style="display:inline-block; margin-left:25%; margin-top:0;">Altitude:</p><input style="display:inline-block; margin-left:10px;" placeholder="10000" id="alt"></input>
+			<p style="display:inline-block; margin-left:5px; margin-top:0;">Altitude:</p><input style="display:inline-block; margin-left:10px;" placeholder="10000" id="alt"></input>
+			<a href="" id="link" onclick="download('situation.acs',Document.getElementById('textLoc').innerHTML);" style="color:blue; padding-left:30px;" >Download .acs File</a>
 		</div>
 	</div>
     <script>
