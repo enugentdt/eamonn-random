@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script>function groundMode(){window.mode="gnd";} function airMode(){window.mode="air";}</script>
+</head>
 <body style="margin: 0;">
-    <div id="map" style="width: 100px; height: 100px; display: inline-block; float: right;">
-    </div>
-    <script src="generatecallsign.js"></script>
-    <script src="routes.js"></script>
-    <script src="getRoute.js"></script>
-    <script src="genicao.js"></script>
-    <script src="genarpt.js"></script>
-    <script src="genflight.js"></script>
-    <script>
-        function myMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(40.640, -73.773),
-                zoom: 10,
-                mapTypeId: google.maps.MapTypeId.HYBRID
-            }
+	<div id="buttons" style="width:100%; margin:0; padding:0;">
+		<div id="groundMode" style="background: red; float:left; width:50%; text-align:center; font-size:30px; color:yellow; cursor:pointer;" onclick="groundMode();" onmouseover="">Ground Mode</div>
+		<div id="groundMode" style="background: green; float:right; width:50%; text-align:center; font-size:30px; color:yellow; cursor:pointer;" onclick="airMode();" onmouseover="">Air Mode</div>
+	</div>
+	<div style="width:100%; margin:0; padding:0;">
+		<div id="map" style="width: 70%; height: 100px; display: inline-block; float: right; margin-top:10px; margin-top:0;"></div>
+		<script src="generatecallsign.js"></script>
+		<script src="routes.js"></script>
+		<script src="getRoute.js"></script>
+		<script src="genicao.js"></script>
+		<script src="genarpt.js"></script>
+		<script src="genflight.js"></script>
+		<script src="genAltitude.js"></script>
+		<script src="download.js"></script>
+		<script>
+			function myMap() {
+				var mapOptions = {
+					center: new google.maps.LatLng(40.6440611,-73.7883084),
+					zoom: 15.5,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+					featureType: "poi",
+					stylers: [
+					  { visibility: "off" }
+					]   
+				}
 
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions)
-            map.addListener('click', function(event) {
-                console.log("Write");
-                displayCoordinates(event.latLng);
-            });
-        }
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+				map.addListener('click', function(event) {
+					console.log("Write");
+					displayCoordinates(event.latLng);
+				});
+			}
 
-        function displayCoordinates(pnt) {
-            var coordsLabel = document.getElementById("textLoc");
-            var lat = pnt.lat();
-            lat = lat.toFixed(10);
-            var lng = pnt.lng();
-            lng = lng.toFixed(10);
-            coordsLabel.innerHTML += genFlight(lat, lng) + "\n";
-        }
+			function displayCoordinates(pnt) {
+				var coordsLabel = document.getElementById("textLoc");
+				var lat = pnt.lat();
+				lat = lat.toFixed(10);
+				var lng = pnt.lng();
+				lng = lng.toFixed(10);
+				coordsLabel.innerHTML += genFlight(lat, lng) + "\n";
+			}
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_8PQoMzOB3T9F-s1oRS6UJjZ7wvpuQc&callback=myMap"></script>
-    <div id="tdCursor" style="padding-right: 10px; padding-top: 10px; display: inline-block; float: left;">
-        <textarea style="resize: none;" onclick="this.focus();this.select()" readonly="readonly" id="textLoc"></textarea>
-    </div>
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_8PQoMzOB3T9F-s1oRS6UJjZ7wvpuQc&callback=myMap"></script>
+		<div id="tdCursor" style="padding-right: 10px; display: inline-block; float: left; width:30%; margin:0; height:100%;">
+			<textarea style="resize: none; height:100%;" onclick="this.focus();this.select()" readonly="readonly" id="textLoc"></textarea>
+			<p style="display:inline-block; margin-left:5px; margin-top:0;">Altitude:</p><input style="display:inline-block; margin-left:10px;" placeholder="10000" id="alt"></input>
+			<a href="" id="link" onclick="download('situation.acs',Document.getElementById('textLoc').innerHTML);" style="color:blue; padding-left:30px;" >Download .acs File</a>
+		</div>
+	</div>
     <script>
         console.log(screen.width);
         var wid = window.innerWidth;
