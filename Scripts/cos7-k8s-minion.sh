@@ -1,7 +1,7 @@
 echo "[virt7-docker-common-release]
 name=virt7-docker-common-release
 baseurl=http://cbs.centos.org/repos/virt7-docker-common-release/x86_64/os/
-gpgcheck=0" >> /etc/yum.repos.d/virt7-docker-common-release.repo
+gpgcheck=0" > /etc/yum.repos.d/virt7-docker-common-release.repo
 
 yum -y install --enablerepo=virt7-docker-common-release kubernetes etcd flannel
 
@@ -18,14 +18,14 @@ KUBELET_PORT="--port=10250"
 
 # You may leave this blank to use the actual hostname
 # Check the node number!
-KUBELET_HOSTNAME="--hostname-override=centos-minion-n"
+KUBELET_HOSTNAME=""
 
 # Location of the api-server
 KUBELET_API_SERVER="--api-servers=http://centos-master:8080"
 
 # Add your own!
 KUBELET_ARGS=""
-' >> /etc/kubernetes/kubelet
+' > /etc/kubernetes/kubelet
 
 
 echo '# Flanneld configuration options
@@ -38,7 +38,7 @@ FLANNEL_ETCD_ENDPOINTS="http://centos-master:2379"
 FLANNEL_ETCD_PREFIX="/kube-centos/network"
 
 # Any additional options that you want to pass
-#FLANNEL_OPTIONS=""' >> /etc/sysconfig/flanneld
+#FLANNEL_OPTIONS=""' > /etc/sysconfig/flanneld
 
 
 for SERVICES in kube-proxy kubelet flanneld docker; do
