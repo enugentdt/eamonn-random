@@ -1,4 +1,4 @@
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 
 echo "# Laptop's SSH key\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMx0wR5JQ+04QcjBRsckG1kxrRaq0+vcjlnREBYZPP7SdYqGRtiZYtEZxiFlfCSF626PXITBrz1XhkZrbbLj8bdYmtWDg+IR7HJJLuHmFgh/HJlRn7jDqQ3Q8W1Ay6tq1n1fINSnuuuDhi+sWtR4gilYngk5O9JyKbs7mDIckaqHrWLhs9oWc8ZcMADy0oaWDyGU28Z1wf6Fz+zB4Np3hsdxs1HOHKH77y2go3Q709BlYwnRKW8hta19Nbn+eBiwWMGHqCXydOW3Yp3EViQ4BaAtDWOmXy1KNKy+EdTad0JKxVkYeSX+MiJSBLYCM4nuhzoTzZrfOvwdIAxlI+OABJ space@Eamonns-Air" >> ~/.ssh/authorized_keys
 
