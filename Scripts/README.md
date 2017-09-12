@@ -4,6 +4,10 @@ cos7-first.sh:
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh | bash`
 
+cos7-httpd-selinux.sh
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd-selinux.sh | bash`
+
 cos7-httpd.sh
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh | bash`
