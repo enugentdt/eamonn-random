@@ -29,4 +29,5 @@ generic-add-ssh.sh
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
 
 Favorite:
+
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
