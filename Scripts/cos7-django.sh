@@ -20,7 +20,7 @@ django-admin startproject django_app
 echo '<VirtualHost *:443>
     ServerName example.com
     ServerAlias www.example.com
-    DocumentRoot /var/www/html/django_project/
+    DocumentRoot /var/www/django_project/
     ErrorLog /var/log/sites/django_project/error.log
     CustomLog /var/log/sites/django_project/requests.log combined
     SSLEngine on
@@ -30,7 +30,7 @@ echo '<VirtualHost *:443>
 
     WSGIDaemonProcess httpd_django python-path=/var/www/django_project/django_app:/lib/python3.4/site-packages
     WSGIProcessGroup httpd_django
-    WSGIScriptAlias / /var/www/html/django_project/django_app/wsgi.py process-group=httpd_django application-group=%{GLOBAL}
+    WSGIScriptAlias / /var/www/django_project/django_app/wsgi.py process-group=httpd_django application-group=%{GLOBAL}
 
     <Directory /var/www/django_project/django_app/>
         <Files wsgi.py>
