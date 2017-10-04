@@ -11,7 +11,7 @@ pip install django django-admin
 
 mkdir -p /etc/httpd/sites-available/
 mkdir -p /etc/httpd/sites-enabled/
-mkdir -p /var/log/httpd/sites/django_project/
+mkdir -p /var/log/sites/django_project/
 mkdir -p /var/www/django_project
 cd /var/www/django_project
 
@@ -49,6 +49,6 @@ ln -s /etc/httpd/sites-available/django.conf /etc/httpd/sites-enabled/django.con
 echo "IncludeOptional sites-enabled/*" >> /etc/httpd/httpd.conf
 
 yum install -y policycoreutils-python
-chcon -t -R /var/log/sites
+chcon -R -t httpd_log_t /var/log/sites
 chown -R apache:apache /var/www
 chown -R apache:apache /var/log/sites
