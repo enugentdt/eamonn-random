@@ -12,6 +12,10 @@ cos7-httpd.sh
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh | bash;`
 
+cos7-django.sh (httpd)
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash`
+
 cos7-mod_wsgi.sh
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh | bash;`
