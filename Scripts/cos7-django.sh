@@ -30,9 +30,9 @@ echo '<VirtualHost *:443>
 
     WSGIDaemonProcess httpd_django python-path=/var/www/django_project/django_app:/lib/python3.4/site-packages
     WSGIProcessGroup httpd_django
-    WSGIScriptAlias / /var/www/django_project/django_app/wsgi.py process-group=httpd_django application-group=%{GLOBAL}
+    WSGIScriptAlias / /var/www/django_project/django_app/django_app/wsgi.py process-group=httpd_django application-group=%{GLOBAL}
 
-    <Directory /var/www/django_project/django_app/>
+    <Directory /var/www/django_project/django_app/django_app/>
         <Files wsgi.py>
             Require all granted
         </Files>
@@ -46,7 +46,7 @@ echo '<VirtualHost *:443>
 </VirtualHost>' >> /etc/httpd/sites-available/django.conf
 
 ln -s /etc/httpd/sites-available/django.conf /etc/httpd/sites-enabled/django.conf
-echo "IncludeOptional sites-enabled/*" >> /etc/httpd/httpd.conf
+echo "IncludeOptional sites-enabled/*" >> /etc/httpd/conf/httpd.conf
 
 yum install -y policycoreutils-python
 chcon -R -t httpd_log_t /var/log/sites
