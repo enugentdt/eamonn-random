@@ -4,7 +4,7 @@ yum -y install python34 python34-devel python34-pip
 yum -y install gcc gcc-c++
 
 echo "alias pip='python3 -m pip'" >> ~/.bashrc
-source .bashrc
+source ~/.bashrc
 
 pip install --upgrade pip
 pip install django django-admin
