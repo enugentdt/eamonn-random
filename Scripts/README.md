@@ -14,11 +14,11 @@ cos7-httpd.sh
 
 cos7-django.sh (httpd)
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash`
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash;`
 
 cos7-maven.sh
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh | bash`
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh | bash;`
 
 cos7-mod_wsgi.sh
 
