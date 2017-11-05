@@ -6,8 +6,8 @@ yum -y install gcc gcc-c++
 echo "alias pip='python3 -m pip'" >> ~/.bashrc
 source ~/.bashrc
 
-pip install --upgrade pip
-pip install django django-admin
+python3 -m pip install --upgrade pip
+python3 -m pip install django django-admin
 
 mkdir -p /etc/httpd/sites-available/
 mkdir -p /etc/httpd/sites-enabled/
