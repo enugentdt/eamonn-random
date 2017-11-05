@@ -17,16 +17,16 @@ cd /var/www/django_project
 
 django-admin startproject django_app
 
-echo '<VirtualHost *:443>
+echo '<VirtualHost *:80> # Change to 443 if you want SSL
     ServerName example.com
     ServerAlias www.example.com
     DocumentRoot /var/www/django_project/
     ErrorLog /var/log/sites/django_project/error.log
     CustomLog /var/log/sites/django_project/requests.log combined
-    SSLEngine on
-    SSLCertificateFile "/var/www/django_project/site.crt"
-    SSLCertificateKeyFile "/var/www/django_project/pk.key"
-    SSLCipherSuite ALL:!aNULL:RC4+RSA:+HIGH:+MEDIUM:+LOW:+EXP:+eNULL
+#    SSLEngine on
+#    SSLCertificateFile "/var/www/django_project/site.crt"
+#    SSLCertificateKeyFile "/var/www/django_project/pk.key"
+#    SSLCipherSuite ALL:!aNULL:RC4+RSA:+HIGH:+MEDIUM:+LOW:+EXP:+eNULL
 
     WSGIDaemonProcess httpd_django python-path=/var/www/django_project/django_app:/lib/python3.4/site-packages
     WSGIProcessGroup httpd_django
