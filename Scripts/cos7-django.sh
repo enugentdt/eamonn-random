@@ -1,6 +1,6 @@
 yum -y install epel-release
 
-yum -y install python34 python34-devel python34-pip
+yum -y install python34 python34-devel python34-pip mod_ssl
 yum -y install gcc gcc-c++
 
 echo "alias pip='python3 -m pip'" >> ~/.bashrc
