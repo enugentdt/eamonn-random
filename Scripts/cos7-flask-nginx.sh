@@ -85,3 +85,5 @@ read -n 1 -s
 nginx -t
 
 systemctl restart nginx
+
+echo "DISABLE SELINUX YOU FUDGESTICK"
