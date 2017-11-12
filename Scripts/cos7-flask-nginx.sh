@@ -42,7 +42,7 @@ module = wsgi
 master = true
 processes = 5
 
-socket = myproject.sock
+socket = flaskproj.sock
 chmod-socket = 660
 vacuum = true
 
@@ -55,9 +55,9 @@ After=network.target
 [Service]
 User=flaskusr
 Group=nginx
-WorkingDirectory=/root/flaskproj
-Environment=\"PATH=/root/flaskproj/flaskenv/bin\"
-ExecStart=/root/flaskproj/flaskenv/bin/uwsgi --ini flaskproj.ini
+WorkingDirectory=/home/flaskusr/flaskproj
+Environment=\"PATH=/home/flaskusr/flaskproj/flaskenv/bin\"
+ExecStart=/home/flaskusr/flaskproj/flaskenv/bin/uwsgi --ini flaskproj.ini
 
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/flaskproj.service
