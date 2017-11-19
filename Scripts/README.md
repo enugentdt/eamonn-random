@@ -26,7 +26,7 @@ CentOS 7 Flask (with existing NGINX)
 
 CentOS 7 NGINX & Flask
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx-flask.sh | bash;`
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-flask-nginx.sh | bash;`
 
 CentOS 7 Maven
 
