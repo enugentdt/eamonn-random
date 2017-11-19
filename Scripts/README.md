@@ -16,6 +16,18 @@ cos7-django.sh (httpd)
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash;`
 
+cos7-nginx.sh
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash;`
+
+cos7-nginx-flask.sh
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx-flask.sh | bash;`
+
+NGINX & Flask
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx-flask.sh | bash;`
+
 cos7-maven.sh
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh | bash;`
@@ -23,6 +35,10 @@ cos7-maven.sh
 cos7-mod_wsgi.sh
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh | bash;`
+
+HTTPD & Django & mod_WSGI
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash;`
 
 cos7-mysql.sh
 
