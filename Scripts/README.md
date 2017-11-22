@@ -48,6 +48,10 @@ CentOS 7 PHP (with existing HTTPD)
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-php.sh | bash;`
 
+CentOS 7 Kubernetes (kubeadm & Flannel)
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-k8s-adm-master.sh | bash;`
+
 Add my SSH keys to Linux
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
