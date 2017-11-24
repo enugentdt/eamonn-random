@@ -52,6 +52,14 @@ CentOS 7 Kubernetes (kubeadm & Flannel)
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-k8s-adm-master.sh | bash;`
 
+CentOS 7 Nagios Add Remote Host Software
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-remote-host.sh | bash;`
+
+CentOS 7 Nagios Add Local Host Entry
+
+`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-host-entry.sh | bash;`
+
 Add my SSH keys to Linux
 
 `curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
