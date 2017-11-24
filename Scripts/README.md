@@ -1,69 +1,71 @@
 ### Commands
 
+bash -c "$(curl -s http://path.to/script-name.sh)"
+
 CentOS 7 Initial Setup
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh)";`
 
 SELinux Rules for CentOS 7 & HTTPD
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd-selinux.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd-selinux.sh)";`
 
 CentOS 7 HTTPD install
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh)";`
 
 CentOS 7 Django (with existing HTTPD)
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh)";`
 
 CentOS 7 NGINX
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh)";`
 
 CentOS 7 Flask (with existing NGINX)
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx-flask.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx-flask.sh)";`
 
 CentOS 7 NGINX & Flask
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-flask-nginx.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-flask-nginx.sh)";`
 
 CentOS 7 Maven
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh)";`
 
 CentOS 7 mod_WSGI Recompile
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh)";`
 
 HTTPD & Django & mod_WSGI
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-httpd.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mod_wsgi.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-django.sh)";`
 
 CentOS 7 MySQL Server
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mysql.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-mysql.sh)";`
 
 CentOS 7 PHP (with existing HTTPD)
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-php.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-php.sh)";`
 
 CentOS 7 Kubernetes (kubeadm & Flannel)
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-k8s-adm-master.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-k8s-adm-master.sh)";`
 
 CentOS 7 Nagios Add Remote Host Software
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-remote-host.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-remote-host.sh)";`
 
 CentOS 7 Nagios Add Local Host Entry
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-host-entry.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-host-entry.sh)";`
 
 Add my SSH keys to Linux
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh)";`
 
 Favorite:
 
-`curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh | bash; curl https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh | bash;`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh)";`
