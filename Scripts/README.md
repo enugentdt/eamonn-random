@@ -30,6 +30,10 @@ CentOS 7 NGINX & Flask
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nginx.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-flask-nginx.sh)";`
 
+CentOS 7 PHP (with existing Nginx)
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-php-nginx.sh)";`
+
 CentOS 7 Maven
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-maven.sh)";`
