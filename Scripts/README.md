@@ -66,6 +66,10 @@ CentOS 7 Nagios Add Local Host Entry
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-nagios-add-host-entry.sh)";`
 
+CentOS 7 oVirt Guest Agent
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-ovirt-agent.sh)";`
+
 Add my SSH keys to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh)";`
