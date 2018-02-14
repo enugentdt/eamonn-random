@@ -12,3 +12,6 @@ type=rpm-md" >> /etc/yum.repos.d/elasticsearch.repo
 yum -y install elasticsearch
 firewall-cmd --permanent --add-service=elasticsearch
 firewall-cmd --reload
+
+systemctl restart elasticsearch
+systemctl enable elasticsearch
