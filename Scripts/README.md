@@ -70,6 +70,10 @@ CentOS 7 oVirt Guest Agent
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-ovirt-agent.sh)";`
 
+CentOS 7 Elasticsearch:
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-elasticsearch.sh)";`
+
 Add my SSH keys to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh)";`
