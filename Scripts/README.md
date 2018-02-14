@@ -77,3 +77,9 @@ Add my SSH keys to Linux
 Favorite:
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/cos7-first.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/generic-add-ssh.sh)";`
+
+## Logging
+
+Filebeat:
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/logging/cos7-filebeat.sh)";`
