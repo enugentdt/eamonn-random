@@ -9,7 +9,7 @@ enabled=1
 autorefresh=1
 type=rpm-md" >> /etc/yum.repos.d/elasticsearch.repo
 
-yum -y install elasticsearch
+yum -y install elasticsearch java-1.8.0-openjdk
 firewall-cmd --permanent --add-service=elasticsearch
 firewall-cmd --reload
 
