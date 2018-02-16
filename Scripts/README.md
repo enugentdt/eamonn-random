@@ -67,17 +67,7 @@ CentOS 7 Nagios Add Local Host Entry
 
 ## Web
 
-SELinux Rules for CentOS 7 & HTTPD
-
-`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-httpd-selinux.sh)";`
-
-CentOS 7 HTTPD install
-
-`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-httpd.sh)";`
-
-CentOS 7 Django (with existing HTTPD)
-
-`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-django.sh)";`
+### NGINX
 
 CentOS 7 NGINX
 
@@ -95,9 +85,19 @@ CentOS 7 PHP (with existing Nginx)
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-php-nginx.sh)";`
 
-CentOS 7 mod_WSGI Recompile
+### Apache
 
-`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-mod_wsgi.sh)";`
+SELinux Rules for CentOS 7 & HTTPD
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-httpd-selinux.sh)";`
+
+CentOS 7 HTTPD install
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-httpd.sh)";`
+
+CentOS 7 Django (with existing HTTPD)
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-django.sh)";`
 
 HTTPD & Django & mod_WSGI
 
@@ -107,4 +107,8 @@ CentOS 7 PHP (with existing HTTPD)
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-php.sh)";`
 
+### Other
 
+CentOS 7 mod_WSGI Recompile
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/web/cos7-mod_wsgi.sh)";`
