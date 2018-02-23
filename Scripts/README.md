@@ -55,6 +55,10 @@ Add my SSH keys to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)";`
 
+Add my Fedora key to Linux
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/ssh-add-fedora.sh)"`
+
 ### Nagios
 
 CentOS 7 Nagios Add Remote Host Software
