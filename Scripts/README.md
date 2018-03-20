@@ -35,6 +35,10 @@ CentOS 7 Maven
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/dev/cos7-maven.sh)";`
 
+CentOS 7 Python 3.6
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/dev/cos7-python36.sh)";`
+
 ## Logging
 
 CentOS 7 Filebeat
