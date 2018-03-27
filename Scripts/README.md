@@ -19,6 +19,10 @@ CentOS 7 Kubernetes (kubeadm & Flannel)
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-k8s-adm-master.sh)";`
 
+CentOS 7 Kubeadm Install
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-k8s-kadm-inst.sh)";`
+
 ## Database
 
 CentOS 7 MySQL Server
