@@ -1,4 +1,4 @@
-yum install wget cockpit zip bind-utils unzip firewalld -y
+yum install wget cockpit zip bind-utils unzip firewalld git -y
 systemctl restart firewalld
 systemctl enable firewalld
 firewall-cmd --permanent --add-service=cockpit
