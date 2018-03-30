@@ -28,7 +28,7 @@ systemctl start docker
 systemctl enable docker
 
 groupadd nogroup
-groupadd docker
+groupadd docker # Fun fact: if you don't have this line, the install will mess up, and you *will* have to reimage the machine.
 
 sudo mkdir -p /opt/dcos_install_tmp
 sudo tar xf dcos-install.tar -C /opt/dcos_install_tmp
