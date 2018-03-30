@@ -19,6 +19,10 @@ hostnamectl set-hostname $HOSTNAME
 setenforce 0
 sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl mask firewalld
+
 yum -y install docker
 systemctl start docker
 systemctl enable docker
