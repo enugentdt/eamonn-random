@@ -4,12 +4,6 @@
 
 HOSTNAME=$1
 
-if [ -z "$TYPE" ]
-then
-  echo "Command incorrect. Usage: (script) <HOSTNAME>"
-  exit 1
-fi
-
 if [ -z "$HOSTNAME" ]
 then
   echo "Command incorrect. Usage: (script) <HOSTNAME>"
