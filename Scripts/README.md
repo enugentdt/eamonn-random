@@ -27,6 +27,10 @@ CentOS 7 Kubeadm Install
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-k8s-kadm-inst.sh)";`
 
+CentOS 7 Prepare for DCOS
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-dcos-prepare.sh)";`
+
 ## Database
 
 CentOS 7 MySQL Server
