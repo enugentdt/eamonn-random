@@ -2,18 +2,17 @@
 
 # This is to be run BEFORE the CLI, and does NOT install DCOS for you. This will also run my oVirt Starter Package stuff
 
-TYPE=$1
-HOSTNAME=$2
+HOSTNAME=$1
 
 if [ -z "$TYPE" ]
 then
-  echo "Command incorrect. Usage: (script) <TYPE> <HOSTNAME>"
+  echo "Command incorrect. Usage: (script) <HOSTNAME>"
   exit 1
 fi
 
 if [ -z "$HOSTNAME" ]
 then
-  echo "Command incorrect. Usage: (script) <TYPE> <HOSTNAME>"
+  echo "Command incorrect. Usage: (script) <HOSTNAME>"
   exit 1
 fi
 
