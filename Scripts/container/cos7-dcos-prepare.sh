@@ -27,10 +27,6 @@ yum -y install docker
 systemctl start docker
 systemctl enable docker
 
-bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-ovirt-agent.sh)"
-bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-first.sh)"
-bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)"
-
 groupadd nogroup
 groupadd docker # Fun fact: if you don't have this line, the install will mess up, and you *will* have to reimage the machine.
 
