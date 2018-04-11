@@ -15,6 +15,10 @@ hostnamectl set-hostname $HOSTNAME
 setenforce 0
 sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 
+bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-ovirt-agent.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-first.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)"
+
 systemctl stop firewalld
 systemctl disable firewalld
 systemctl mask firewalld
