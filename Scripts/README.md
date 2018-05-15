@@ -51,6 +51,10 @@ CentOS 7 Python 3.6
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/dev/cos7-python36.sh)";`
 
+CentOS 7 Musl LibC
+
+`bash -c "$curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/blob/master/Scripts/dev/cos7-musl.sh)";`
+
 ## Logging
 
 CentOS 7 Filebeat
