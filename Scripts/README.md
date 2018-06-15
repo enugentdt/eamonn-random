@@ -91,6 +91,11 @@ CentOS 7 Nagios Add Local Host Entry
 
 ## Web
 
+
+## Networking
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/net/firewalld-cloudflare.sh)";`
+
 ### NGINX
 
 CentOS 7 NGINX
