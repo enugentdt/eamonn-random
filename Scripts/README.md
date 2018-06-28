@@ -79,6 +79,10 @@ Add my Fedora key to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/ssh-add-fedora.sh)"`
 
+### Zabbix
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/zabbix/cos7-install-agent.sh)"`
+
 ### Nagios
 
 CentOS 7 Nagios Add Remote Host Software
