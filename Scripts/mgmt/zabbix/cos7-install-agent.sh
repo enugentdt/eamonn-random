@@ -6,5 +6,5 @@ sed -i 's/Hostname=zabbix-hostname/Hostname=$HOSTNAME' /etc/zabbix/zabbix_agentd
 systemctl start zabbix-agent
 systemctl enable zabbix-agent
 firewall-cmd --permanent --add-port=10050/tcp
-firewall-cmd --permannet --add-port=10051/tcp
+firewall-cmd --permanent --add-port=10051/tcp
 firewall-cmd --reload
