@@ -53,7 +53,7 @@ CentOS 7 Python 3.6
 
 CentOS 7 Musl LibC
 
-`bash -c "$curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/blob/master/Scripts/dev/cos7-musl.sh)";`
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/blob/master/Scripts/dev/cos7-musl.sh)";`
 
 ## Logging
 
