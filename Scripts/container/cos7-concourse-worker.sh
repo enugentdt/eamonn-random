@@ -12,6 +12,7 @@ sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 groupadd docker
 
 wget https://github.com/concourse/concourse/releases/download/v4.0.0/concourse_linux_amd64 -O /usr/bin/concourse
+chmod +x /usr/bin/concourse
 
 mkdir /root/concourse
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33E51RyFWMyZ/RDfHlpyQb9oz0djYNYmg6+f1w1Rbht53AzSRypWCczc2JDJAuBVCV9V92qQAHTly10DIzkuUr91QLUbXJAz3NdCkaMooVPWTt3AcJ4wCIEiRk+Fgm0zlPCEB4uOcXw5mFg68Kb41/TpTRAgkHV6q7EI+BJ7V8q3+pxefJoDTv80ttrBH8nW5OTtulvkS+LGT76K5n0k7Jew2NsQqDZPfgV/I1/4L7JHuUMazLqq9oUuHREQaZdd8k4iw0vU0VM4NbeGeMs0zXs4G1QScOPokH9sqjuYwH6ZbgPU8U2RGDw0+CEk3vkvlkr1rkLNumqwChVnOs3ZN root@concourse.stm.inf.demilletech.net" > /root/concourse/tsa_host_key.pub
