@@ -1,5 +1,8 @@
 yum -y install docker
 
+systemctl stop firewalld
+systemctl disable firewalld
+systemctl mask firewalld
 systemctl start docker
 systemctl enable docker
 
