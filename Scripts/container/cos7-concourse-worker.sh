@@ -6,6 +6,9 @@ systemctl mask firewalld
 systemctl start docker
 systemctl enable docker
 
+setenforce 0
+sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+
 groupadd docker
 
 wget https://github.com/concourse/concourse/releases/download/v4.0.0/concourse_linux_amd64 -O /usr/bin/concourse
