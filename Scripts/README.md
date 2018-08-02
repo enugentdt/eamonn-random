@@ -59,6 +59,10 @@ CentOS 7 Musl LibC
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/dev/cos7-musl.sh)";`
 
+CentOS 7 Upgrade to Kernel 4.17
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/dev/cos7-kernel-4.17.sh)";`
+
 ## Logging
 
 CentOS 7 Filebeat
