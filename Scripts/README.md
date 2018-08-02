@@ -19,6 +19,10 @@ CentOS 7 Join DCOS Cluster
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-dcos-join-cluster.sh)";`
 
+CentOS 7 Join DCOS Cluster
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-concourse-worker.sh)";`
+
 CentOS 7 Kubernetes (kubeadm & Flannel)
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/container/cos7-k8s-adm-master.sh)";`
