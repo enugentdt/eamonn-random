@@ -8,6 +8,10 @@ First & scripts
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-first.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)";`
 
+VMWare Starter Package
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-vmware-tools.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-first.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)";`
+
 oVirt Starter Package
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-ovirt-agent.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-first.sh)"; bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)";`
