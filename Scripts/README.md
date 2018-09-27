@@ -83,6 +83,14 @@ CentOS 7 oVirt Guest Agent
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-ovirt-agent.sh)";`
 
+CentOS 7 VMware Guest Agent
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-vmware-tools.sh)";`
+
+CentOS 7 oVirt to VMware Guest Agent
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/cos7-ovirt-to-vmware.sh)";`
+
 Add my SSH keys to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/generic-add-ssh.sh)";`
