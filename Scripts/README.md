@@ -103,6 +103,10 @@ Add my Fedora key to Linux
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/ssh-add-fedora.sh)"`
 
+Add my iMac key to Linux
+
+`bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/ssh-add-imac.sh)"`
+
 ### Zabbix
 
 `bash -c "$(curl -s https://raw.githubusercontent.com/enugentdt/eamonn-random/master/Scripts/mgmt/zabbix/cos7-install-agent.sh)"`
